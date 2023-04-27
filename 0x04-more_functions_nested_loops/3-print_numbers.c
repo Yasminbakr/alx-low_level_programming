@@ -2,15 +2,16 @@
 
 /**
  * print_numbers - prints numbers between 0 to 9.
- * Return: no return.
+ * Return: always 0 (success).
  */
+
 void print_numbers(void)
 {
-	int i = 0;
+	int n = 0;
 
 	do {
-		_putchar(i + 48);
-		i++;
-	} while (i >= 0 && i<= 9);
+		_putchar(n + 48);
+		n++;
+	} while (n >= 0 && n <= 9);
 	_putchar('\n');
 }
