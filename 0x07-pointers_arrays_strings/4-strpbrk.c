@@ -1,5 +1,5 @@
 #include "main.h"
-#define NULL 0
+
 
 /**
  * _strpbrk - return pointer to byte in s that matches a byte in accept
@@ -10,21 +10,14 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0, j;
+	int i, j;
 
-	while (s[i] != '\0') /*iterate through string*/
+	for (i = 0; accept[i]; i++)
 	{
-
-		for (j = 0; accept[j] != '\0'; j++) /* iterate through target */
-		{
-			if (s[i] == accept[j]) /* stop at first match */
-			{
-				s = &s[i]; /* set pointer to first occurence */
-				return (s);
-			}
-		}
-		i++;
+		for (j = 0; accept[j]; j++)
+			if (accept[j] == s[i])
+				return (s + i);
 	}
-	return (NULL); /* return NULL if no matches */
 
+	return (0);
 }
