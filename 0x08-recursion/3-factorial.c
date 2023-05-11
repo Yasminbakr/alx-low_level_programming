@@ -4,7 +4,7 @@
 /**
  * factorial - a function that returns the factorial of a given number.
  * @n : the given integer number by the user to find the factorial of it.
- * Return : the factorial of number if it has or -1 it it hasnt.
+ * Return : int factorial of number if it has or -1 it it hasnt.
  */
 
 int factorial(int n)
