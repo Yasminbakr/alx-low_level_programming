@@ -2,9 +2,9 @@
 
 /**
  * _pow_recursion - returns the value of x raised to the power of y.
- * @x : the input number
- * @y : the power
- * Return : int value of function
+ * @x: the input number
+ * @y: the power
+ * Return: int value of function
  */
 
 int _pow_recursion(int x, int y)
