@@ -13,6 +13,8 @@ int _pow_recursion(int x, int y)
 		return (-1);/*as an declaration of error*/
 	else if (y == 0)
 		return (1);/*because any number with power 0 = 1*/
+	else if (y == 1)
+		return (x);/*because any num with power 1 = same num*/
 	else
 		return (x * _pow_recursion(x, y - 1));
 
