@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 1; i < argc; i++);
+		for (i = 1; i < argc; i++)
 		{
 			ar[i]  = isdigit(argv[i]);
 			if (ar[i] == 0)
